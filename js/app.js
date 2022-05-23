@@ -12,6 +12,8 @@ const saveVechile = ()=>{
     const vechile = new Object()
 
     for(i=0; i<fieldsArray.length; i++){
+        if(fieldsArray[i].name == "")continue;
+
         vechile[fieldsArray[i].name] = fieldsArray[i].value
     }
 

@@ -1,0 +1,37 @@
+#cards-wrapper{
+    padding: 3% 15%;
+    height: 100%;
+}
+    #cards-wrapper h1{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .card{
+        margin-bottom: 5%;
+        /* height: 100%; */
+        width: 100%;
+        border: 2px outset ;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+    }
+        .card .left-column{
+            float: left;
+        }
+            .card .spec{
+                margin: 7% 0px;
+            }
+            .card .E-attribute{
+                font-size: medium;
+                font-weight: bold;
+                padding-top:100px;
+                
+            }
+            .card .E-value{
+                font-size: medium;
+            }
+
+        .card img{
+            width: 25%;
+            /* height: 100%; */
+            float: right;
+        }
