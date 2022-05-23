@@ -6,3 +6,30 @@ function showPreview(event){
       preview.style.display = "block";
     }
   }
+
+const saveVechile = ()=>{
+    let fieldsArray = document.querySelectorAll("form input")
+    const vechile = new Object()
+
+    for(i=0; i<fieldsArray.length; i++){
+        vechile[fieldsArray[i].name] = fieldsArray[i].value
+    }
+
+    vechileImage = document.querySelector("#file-ip-1-preview")
+    vechile.image = getBase64Image(vechileImage);
+
+    localStorage.setItem(vechile.name, JSON.stringify(vechile))
+}
+
+function getBase64Image(img) {
+    let canvas = document.createElement("canvas");
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    let ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0);
+
+    let dataURL = canvas.toDataURL("image/png");
+
+    return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+}

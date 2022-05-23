@@ -29,7 +29,7 @@
 
     <div class="form-style-2">
         <div class="form-style-2-heading">Provide The Equipment's specs</div>
-        <form action="" method="post" id="my-form">
+        <form action="" method="post" id="my-form" onsubmit="return false">
             <label for="name"><span>Name<span class="required">*</span></span><input type="text" class="input-field" name="name" value="" /></label>
             <label for="model"><span>Model<span class="required">*</span></span><input type="text" class="input-field" name="model" value="" /></label>
             <label for="manufacturer"><span>Manufacturer<span class="required">*</span></span><input type="text" class="input-field" name="manufacturer" value="" /></label>
@@ -50,7 +50,7 @@
             
             <label for="operator"><span>operator<span class="required">*</span></span><input type="text" class="input-field" name="operator" value="" /></label>
     
-            <label><span> </span><input type="submit" value="Submit" /></label>
+            <label><span> </span><input type="submit" value="Submit" onclick="saveVechile()"/></label>
 
         </form>
 
